@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contacto - DISAVA</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f9c806",
+                        "background-light": "#f8f8f5",
+                        "background-dark": "#231f0f",
+                        "text-light": "#1c190d",
+                        "text-dark": "#fcfbf8",
+                        "subtle-light": "#9e8d47",
+                        "subtle-dark": "#9e8d47",
+                        "border-light": "#e9e3ce",
+                        "border-dark": "#4d4420"
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 w-full border-b border-border-light dark:border-border-dark bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="container mx-auto flex items-center justify-between whitespace-nowrap px-4 sm:px-6 lg:px-8 h-20">
+<div class="flex items-center gap-4">
+<div class="h-8 w-8 text-text-light dark:text-text-dark">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold tracking-[-0.015em] text-text-light dark:text-text-dark">DISAVA</h2>
+</div>
+<nav class="hidden items-center gap-9 lg:flex">
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Productos</a>
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Servicios</a>
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Sobre Nosotros</a>
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Contacto</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-text-light text-sm font-bold tracking-[0.015em] transition-transform hover:scale-105 sm:flex">
+<span class="truncate">Cotizar Ahora</span>
+</button>
+<button class="lg:hidden p-2 rounded-md hover:bg-primary/20 dark:hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div></header>
+</div>
+<!-- Main Content -->
+<main class="flex-grow">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+<div class="mx-auto grid max-w-6xl grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
+<!-- Contact Info and Image -->
+<div class="flex flex-col justify-center space-y-8">
+<div>
+<p class="text-sm font-semibold uppercase tracking-wider text-primary">Contáctenos</p>
+<h1 class="mt-2 text-4xl font-black leading-tight tracking-tighter sm:text-5xl">Póngase en Contacto</h1>
+<p class="mt-4 max-w-xl text-lg text-subtle-light dark:text-subtle-dark">Complete el formulario y nuestro equipo le responderá a la brevedad. Estamos aquí para ayudarle con cualquier consulta sobre nuestros productos y servicios.</p>
+</div>
+<div class="space-y-4">
+<div class="flex items-start gap-4">
+<div class="flex-shrink-0 pt-1">
+<span class="material-symbols-outlined text-primary">call</span>
+</div>
+<div>
+<h3 class="font-semibold">Teléfono</h3>
+<p class="text-subtle-light dark:text-subtle-dark">(+506) 2222-3333</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="flex-shrink-0 pt-1">
+<span class="material-symbols-outlined text-primary">mail</span>
+</div>
+<div>
+<h3 class="font-semibold">Correo Electrónico</h3>
+<p class="text-subtle-light dark:text-subtle-dark">ventas@disava.co.cr</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="flex-shrink-0 pt-1">
+<span class="material-symbols-outlined text-primary">location_on</span>
+</div>
+<div>
+<h3 class="font-semibold">Dirección</h3>
+<p class="text-subtle-light dark:text-subtle-dark">San José, Costa Rica</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Contact Form -->
+<div class="w-full rounded-xl bg-background-light dark:bg-background-dark p-8 border border-border-light dark:border-border-dark shadow-lg">
+<form class="space-y-6">
+<div>
+<label class="flex flex-col">
+<p class="text-base font-medium leading-normal pb-2">Nombre Completo</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark focus:outline-none focus:ring-2 focus:ring-primary border border-border-light dark:border-border-dark h-14 placeholder:text-subtle-light dark:placeholder:text-subtle-dark px-4 text-base font-normal leading-normal" placeholder="Ingrese su nombre completo" type="text"/>
+</label>
+</div>
+<div>
+<label class="flex flex-col">
+<p class="text-base font-medium leading-normal pb-2">Correo Electrónico</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark focus:outline-none focus:ring-2 focus:ring-primary border border-border-light dark:border-border-dark h-14 placeholder:text-subtle-light dark:placeholder:text-subtle-dark px-4 text-base font-normal leading-normal" placeholder="ejemplo@correo.com" type="email"/>
+</label>
+</div>
+<div>
+<label class="flex flex-col">
+<p class="text-base font-medium leading-normal pb-2">Mensaje</p>
+<textarea class="form-input flex w-full min-w-0 flex-1 resize-y overflow-hidden rounded-lg bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark focus:outline-none focus:ring-2 focus:ring-primary border border-border-light dark:border-border-dark min-h-36 placeholder:text-subtle-light dark:placeholder:text-subtle-dark p-4 text-base font-normal leading-normal" placeholder="Escriba su consulta aquí..."></textarea>
+</label>
+</div>
+<div>
+<button class="flex w-full min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 px-4 bg-primary text-text-light text-base font-bold tracking-wider transition-transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark focus:ring-primary" type="submit">
+<span class="truncate">Enviar Consulta</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</main>
+</body></html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>DISAVA - Catálogo de Productos</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <script id="tailwind-config">
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+        extend: {
+            colors: {
+            "primary": "#f9c806",
+            "background-light": "#f8f8f5",
+            "background-dark": "#111827",
+            },
+            fontFamily: {
+            "display": ["Work Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+        },
+    }
+    </script>
+    <style>
+    .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-100">
+    <div class="relative flex w-full flex-col group/design-root overflow-x-hidden">
+    <div class="layout-container flex h-full grow flex-col">
+    <!-- TopNavBar Component -->
+    <header class="w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+    <div class="flex items-center gap-4 text-gray-800 dark:text-white">
+    <div class="size-6 text-primary">
+    <svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+    <path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z"></path>
+    </svg>
+    </div>
+    <h2 class="text-xl font-bold tracking-tighter">DISAVA</h2>
+    </div>
+    <nav class="hidden md:flex items-center gap-9">
+    <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Inicio</a>
+    <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Catálogo</a>
+    <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Nosotros</a>
+    <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Contacto</a>
+    </nav>
+    <div class="flex items-center">
+    <a class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-background-dark text-sm font-bold tracking-wide hover:bg-opacity-90 transition-colors" href="https://api.whatsapp.com/send?phone=TUNUMERO&amp;text=Hola%20DISAVA,%20quisiera%20hacer%20una%20consulta%20general." target="_blank">
+    <span class="truncate">Consultar por WhatsApp</span>
+    </a>
+    </div>
+    </div>
+    </div>
+    </header>
+    <!-- Main Content -->
+    <main class="py-16 sm:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- SectionHeader & BodyText Components -->
+    <div class="text-center mb-12">
+    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tighter text-gray-900 dark:text-white">Nuestro Catálogo de Productos</h1>
+    <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-400">
+                    Explora nuestras soluciones electrónicas diseñadas para optimizar y asegurar tu negocio. Ofrecemos equipos de alta precisión y confiabilidad.
+                </p>
+    </div>
+    <!-- Product Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Product Card 1 -->
+    <div class="group flex flex-col bg-white/5 dark:bg-[#1F2937] rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20 border border-white/10 dark:border-gray-700/50">
+    <div class="relative w-full aspect-video">
+    <img alt="Balanzas digitales de precisión sobre un mostrador limpio" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3zQFv4oLUrQwaxqwkDKTF38pCSkeAJYTA5_LH652TJc29zQY2RReUGQAkp3Ul_CPtkdVrwlbB4tG4kRCZbe28jHa91uoRzJyuTbnJKHtjut22S9BClC5q3nVupkzOlwM_CnH-vSr9SnDwRBzg2srriDJp4iVtPo4oWcd_eTgbR_pCDTNtxx-L4NB7kbG7QtBqZQrxwbH0TBvypX48YyMZbsXY7Laq6FqHRNgtLK_DL6B05Z__74OpclqIGw78prsQ8SZJNarrI6VZ"/>
+    </div>
+    <div class="p-6 flex-grow flex flex-col">
+    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Balanzas Digitales de Precisión</h3>
+    <div class="mt-auto">
+    <a class="inline-block w-full text-center py-3 px-6 bg-primary text-background-dark font-bold rounded-lg transition-transform duration-300 group-hover:scale-105" href="https://api.whatsapp.com/send?phone=TUNUMERO&amp;text=Hola%20DISAVA,%20estoy%20interesado%20en%20consultar%20el%20precio%20de%20las%20Balanzas%20Digitales%20de%20Precisión." target="_blank">
+                            Consultar Precio
+                            </a>
+    </div>
+    </div>
+    </div>
+    <!-- Product Card 2 -->
+    <div class="group flex flex-col bg-white/5 dark:bg-[#1F2937] rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20 border border-white/10 dark:border-gray-700/50">
+    <div class="relative w-full aspect-video">
+    <img alt="Máquina contadora de billetes en funcionamiento" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBc2LtxzWQ9w1AkmRIDcWgsJml4SkgUpms-W7r35H8c4EGgygY2my9dryJB4_xZxRNCVzoQQyt31VDxqPwbGgLq4jT1OFpMWyznCIN3IuhUQ38Vj45GfKWU4K_NWtyeJJEQbGbMqdQv8o_tVLk7fRkioJVDMh3hobZlIZmm5iNTtKlxxYntCetp-DqljyZDMNLH6RgRvg1QrqE-Ca0gOMuKLGuLCnHSCARlFztldmphzZaOhceIES2kJrDpxcJYHc9EW69FQBXc6UNJ"/>
+    </div>
+    <div class="p-6 flex-grow flex flex-col">
+    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Contadoras y Detectoras de Billetes</h3>
+    <div class="mt-auto">
+    <a class="inline-block w-full text-center py-3 px-6 bg-primary text-background-dark font-bold rounded-lg transition-transform duration-300 group-hover:scale-105" href="https://api.whatsapp.com/send?phone=TUNUMERO&amp;text=Hola%20DISAVA,%20estoy%20interesado%20en%20consultar%20el%20precio%20de%20las%20Contadoras%20y%20Detectoras%20de%20Billetes." target="_blank">
+                        Consultar Precio
+                        </a>
+    </div>
+    </div>
+    </div>
+    <!-- Product Card 3 -->
+    <div class="group flex flex-col bg-white/5 dark:bg-[#1F2937] rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20 border border-white/10 dark:border-gray-700/50">
+    <div class="relative w-full aspect-video">
+    <img alt="Caja registradora moderna en un mostrador de una tienda" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsZqRxA6ub-MJo0eZE6PTDk3fLzF3_tDnd95QmMvYvDps2NWgoFMhH0WZgpNOS3oAr3aAtDK2gq0Uk4NHlsMIkJGO4R6uhM97zqB6NwP-grKiRFPD-UxHQCvelMRq5Rmtt9RWy-83bqTJejOrPiqrjV8okgr8hTvrn079HoifwsT3sb6OPO_Frv1qxl-wSaAbPjQMAIyonyVhGFTaQqjrAwMqxNvj9OTnWVwxbIsGJ7idwK5ahwY6riUC5D1ltGcXAMZCJu2UYrz6N"/>
+    </div>
+    <div class="p-6 flex-grow flex flex-col">
+    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Cajas Registradoras</h3>
+    <div class="mt-auto">
+    <a class="inline-block w-full text-center py-3 px-6 bg-primary text-background-dark font-bold rounded-lg transition-transform duration-300 group-hover:scale-105" href="https://api.whatsapp.com/send?phone=TUNUMERO&amp;text=Hola%20DISAVA,%20estoy%20interesado%20en%20consultar%20el%20precio%20de%20las%20Cajas%20Registradoras." target="_blank">
+                        Consultar Precio
+                        </a>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </main>
+    <!-- Footer Component -->
+    <footer class="bg-background-light/50 dark:bg-background-dark/50 mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="flex flex-col items-center gap-8">
+    <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
+    <a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary transition-colors" href="#">Política de Privacidad</a>
+    <a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary transition-colors" href="#">Términos de Servicio</a>
+    </div>
+    <div class="flex justify-center gap-6">
+    <a class="text-gray-500 dark:text-gray-400 hover:text-primary transition-colors" href="#">
+    <span class="material-symbols-outlined"></span> <!-- Placeholder for WhatsApp -->
+    </a>
+    <a class="text-gray-500 dark:text-gray-400 hover:text-primary transition-colors" href="#">
+    <span class="material-symbols-outlined"></span> <!-- Placeholder for Facebook -->
+    </a>
+    <a class="text-gray-500 dark:text-gray-400 hover:text-primary transition-colors" href="#">
+    <span class="material-symbols-outlined"></span> <!-- Placeholder for Instagram -->
+    </a>
+    </div>
+    <p class="text-sm text-gray-500 dark:text-gray-400 text-center">© 2024 Distribuciones Avendaño Valverde (DISAVA). Todos los derechos reservados.</p>
+    </div>
+    </div>
+    </footer>
+    </div>
+    </div>
+</body>
+</html>
