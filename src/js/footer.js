@@ -15,11 +15,11 @@ const footerHtml = `
 <ul class="space-y-3 text-sm">
 <li class="flex items-start gap-3">
 <span class="material-symbols-outlined text-primary mt-1 text-xl">location_on</span>
-<span>Dirección de la empresa, Ciudad, País</span>
+<span>Avenida, Guayaquil, Ecuador</span>
 </li>
 <li class="flex items-start gap-3">
 <span class="material-symbols-outlined text-primary mt-1 text-xl">call</span>
-<span>+593-99-845-1652</span>
+<span>+593-98-631-5492</span>
 </li>
 <li class="flex items-start gap-3">
 <span class="material-symbols-outlined text-primary mt-1 text-xl">mail</span>
@@ -56,7 +56,7 @@ const footerHtml = `
 </div>
 </footer>
 <!-- FAB Component -->
-<a class="group fixed bottom-6 right-6 z-50" href="https://wa.me/593998451652?text=Hola,%20estoy%20interesado%20en%20sus%20productos." rel="noopener noreferrer" target="_blank">
+<a class="group fixed bottom-6 right-6 z-50" href="https://wa.me/593986315492?text=Hola,%20estoy%20interesado%20en%20sus%20productos." rel="noopener noreferrer" target="_blank">
 <button class="flex items-center justify-center rounded-full h-16 w-16 bg-[#25D366] text-white shadow-lg transform transition-transform duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#25D366] dark:focus:ring-offset-background-dark">
 <svg aria-hidden="true" class="w-8 h-8" fill="currentColor" viewbox="0 0 24 24"><path d="M16.75 13.96c.25.13.42.3.52.49.1.19.1.42.06.68-.04.26-.16.5-.34.71-.18.21-.42.38-.72.5-.29.12-.64.18-1.04.18h-.1c-.48 0-.98-.1-1.49-.31s-1.02-.55-1.53-.99c-.52-.44-.98-.98-1.39-1.6s-.75-1.32-1.02-2.12c-.27-.8-.41-1.68-.41-2.61 0-1.02.21-1.9.64-2.66.43-.76 1.02-1.33 1.79-1.74s1.65-.61 2.65-.61c.1 0 .21.01.31.03.1.02.2.05.29.09.09.04.18.1.26.17.08.07.15.16.21.27s.11.23.15.37.06.29.06.46c0 .15-.02.29-.05.42s-.08.26-.15.38c-.07.12-.17.24-.29.35s-.28.22-.46.33c-.18.11-.38.22-.59.33s-.42.23-.62.33c-.2.1-.38.2-.52.31s-.25.24-.31.39c-.07.15-.09.32-.09.51 0 .21.04.4.12.58s.2.33.36.46.36.25.59.33c.23.08.49.12.78.12.32 0 .63-.07.92-.21s.55-.32.79-.53c.23-.21.42-.46.56-.75.14-.29.21-.61.21-.97 0-.19-.02-.38-.07-.57s-.13-.36-.22-.53c-.1-.17-.22-.32-.37-.45s-.32-.25-.51-.34c-.19-.09-.4-.14-.62-.14h-.3c-.22 0-.43.03-.63.09s-.39.15-.57.29c-.18.14-.33.3-.46.49s-.23.41-.29.65c-.06.24-.09.49-.09.76 0 .33.07.62.21.87s.32.46.54.63c.22.17.48.29.77.38.29.09.58.14.88.14.47 0 .9-.1 1.29-.3s.73-.55 1.01-.99c.28-.44.42-.95.42-1.54 0-.52-.12-1-.35-1.45s-.58-.8-1.02-1.05z"></path></svg>
 <span class="sr-only">Contactar por WhatsApp</span>

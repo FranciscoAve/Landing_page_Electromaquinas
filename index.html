@@ -54,8 +54,8 @@
     <div class="layout-container flex h-full grow flex-col">
       <div class="flex flex-1 justify-center px-4 py-5 sm:px-10 md:px-20 lg:px-40">
         <div class="layout-content-container flex w-full max-w-[1080px] flex-1 flex-col">
-          <header class="flex w-full items-center justify-between whitespace-nowrap border-b border-solid border-border-light dark:border-border-dark px-4 py-3 sm:px-10">
-            <div class="flex items-center gap-4">
+          <header id="header" class="relative flex w-full items-center justify-between whitespace-nowrap border-b border-solid border-border-light dark:border-border-dark px-4 py-3 sm:px-10 bg-background-light dark:bg-background-dark transition-all duration-300">
+            <div href="#" class="flex items-center gap-4">
               <div class="size-6 text-primary">
                 <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
                 <path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z" fill="currentColor"></path>
@@ -63,20 +63,23 @@
               </div>
             <h2 class="text-lg font-bold leading-tight tracking-[-0.015em] text-text-light dark:text-text-dark">DISAVA</h2>
             </div>
-          <nav id="menu_movil" class="hidden flex flex-col gap-2 bg-background-light dark:bg-background-dark p-4 absolute top-20 left-0 w-full md:hidden rounded-b-lg shadow-lg overflow-hidden max-h-0 transition-all duration-500">
-          <a class="text-text-light dark:text-text-dark hover:text-primary text-sm font-medium py-2 border-b border-border-light dark:border-border-dark" href="#">Productos</a>
-          <a class="text-text-light dark:text-text-dark hover:text-primary text-sm font-medium py-2 border-b border-border-light dark:border-border-dark" href="#">Nosotros</a>
-          <a class="text-text-light dark:text-text-dark hover:text-primary text-sm font-medium py-2" href="#">Contacto</a>
+          <nav id="menu_movil" class="absolute flex flex-col gap-2 bg-background-light dark:bg-background-dark px-4 sm:px-10 p-4 absolute top-full left-0 w-full md:hidden rounded-b-lg shadow-lg
+          max-h-0 opacity-0 pointer-events-none overflow-hidden transition-all duration-500">
+          <a class="text-text-light dark:text-text-dark hover:text-primary text-sm font-medium py-2 border-b border-border-light dark:border-border-dark" href="#section_product">Productos</a>
+          <a class="text-text-light dark:text-text-dark hover:text-primary text-sm font-medium py-2 border-b border-border-light dark:border-border-dark" href="#nosotros">Nosotros</a>
+          <a class="text-text-light dark:text-text-dark hover:text-primary text-sm font-medium py-2" href="#form_contact">Contacto</a>
           </nav>
+
           <button id="btn_desplegar_menu" class="md:hidden relative w-8 h-8 flex flex-col justify-between items-center">
           <span class="block w-8 h-0.5 bg-text-light dark:bg-text-dark transition-all duration-300 origin-center"></span>
           <span class="block w-8 h-0.5 bg-text-light dark:bg-text-dark transition-all duration-300 origin-center"></span>
           <span class="block w-8 h-0.5 bg-text-light dark:bg-text-dark transition-all duration-300 origin-center"></span>
           </button>
           </header>
+          
           <main class="w-full flex-1">
           <section class="@container py-10 md:py-20">
-          <div class="flex min-h-[480px] flex-col gap-6 rounded-lg bg-cover bg-center bg-no-repeat @[480px]:gap-8 items-center justify-center p-6 text-center" data-alt="An aesthetic arrangement of electronic machines like a bill counter and a digital scale on a dark background" style='background-image: linear-gradient(rgba(26, 26, 26, 0.7) 0%, rgba(26, 26, 26, 0.9) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAL8eLe66dcrEaI605ux6XBpQDFMRcZkApZsxq21QJfE2OZD1ahuwu-peqn3Hvg3H5bkGvNOkY96czM-1g-CmJ-AT_KjybI_xnS-jokMJZUwgKGlsuZd4PoRgXcUmxdqjwLE-9sbgTw283mJ9zxRZ1u6YNME7TJxAX6XBMsy0tMdxYcVA2lEMCL6YdlCgsd2bIjnY3-gVtKQE9gAVqYO83BAz-eE98c-jIQQT5GutWZ9zgybpNrWbs65qUG8m916nOfn8Mw9tYiNFUh");'>
+          <div id="section_product" class="flex min-h-[480px] flex-col gap-6 rounded-lg bg-cover bg-center bg-no-repeat @[480px]:gap-8 items-center justify-center p-6 text-center" data-alt="An aesthetic arrangement of electronic machines like a bill counter and a digital scale on a dark background" style='background-image: linear-gradient(rgba(26, 26, 26, 0.7) 0%, rgba(26, 26, 26, 0.9) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAL8eLe66dcrEaI605ux6XBpQDFMRcZkApZsxq21QJfE2OZD1ahuwu-peqn3Hvg3H5bkGvNOkY96czM-1g-CmJ-AT_KjybI_xnS-jokMJZUwgKGlsuZd4PoRgXcUmxdqjwLE-9sbgTw283mJ9zxRZ1u6YNME7TJxAX6XBMsy0tMdxYcVA2lEMCL6YdlCgsd2bIjnY3-gVtKQE9gAVqYO83BAz-eE98c-jIQQT5GutWZ9zgybpNrWbs65qUG8m916nOfn8Mw9tYiNFUh");'>
           <div class="flex flex-col gap-4">
           <h1 class="text-4xl font-black leading-tight tracking-[-0.033em] text-white @[480px]:text-5xl">
                                                 Distribuciones Avendaño Valverde (DISAVA)
@@ -92,7 +95,7 @@
 
           </div>
           </section>
-          <section class="flex flex-col gap-10 px-4 py-10 @container">
+          <section id="nosotros" class="flex flex-col gap-10 px-4 py-10 @container">
           <div class="flex flex-col gap-4 text-center">
           <h1 class="text-text-light dark:text-text-dark tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px] mx-auto">
                                               Confianza y Calidad Garantizada
@@ -125,14 +128,14 @@
           <span class="material-symbols-outlined text-3xl">local_shipping</span>
           </div>
           <div class="flex flex-col gap-1">
-          <h2 class="text-base font-bold leading-tight text-text-light dark:text-text-dark">Envíos a todo el país</h2>
+          <h2 class="text-base font-bold leading-tight text-text-light dark:text-text-dark">Envíos a toda la ciudad</h2>
           <p class="text-sm font-normal leading-normal text-text-secondary-light dark:text-text-secondary-dark">Reciba sus equipos de forma rápida y segura en cualquier parte del territorio nacional.</p>
           </div>
           </div>
           </div>
           </section>
           <!--FORMULARIO DE CONTACTO-->
-          <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+          <div id="form_contact" class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
           <div class="mx-auto grid max-w-6xl grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
           <!-- Contact Info and Image -->
           <div class="flex flex-col justify-center space-y-8">
@@ -166,7 +169,7 @@
           </div>
           <div>
           <h3 class="font-semibold">Dirección</h3>
-          <p class="text-subtle-light dark:text-subtle-dark">San José, Costa Rica</p>
+          <p class="text-subtle-light dark:text-subtle-dark">Guayaquil, Ecuador</p>
           </div>
           </div>
           </div>

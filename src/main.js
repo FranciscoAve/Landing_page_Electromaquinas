@@ -5,8 +5,11 @@ import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
 
 const btnCatalogo = document.getElementById("btnCatalogo");
-const btn_menu = document.getElementById("btn_desplegar_menu");
+
+const btn__desplegar_menu = document.getElementById("btn_desplegar_menu");
 const menu_movil = document.getElementById("menu_movil");
+const lineas = btn__desplegar_menu.querySelectorAll("span");
+const enlacesMenu = menu_movil.querySelectorAll("a");
 //const contenido = document.createElement('div'); // contenedor dinámico
 //document.body.appendChild(contenido);
 
@@ -18,18 +21,35 @@ btnCatalogo.addEventListener("click", () => {
 });
 
 
-btn_menu.addEventListener("click", () => {
-  menu_movil.classList.toggle("btn-open");
-
-  if (menu_movil.classList.contains("hidden")) {
-    menu_movil.classList.remove("hidden");
-    menu_movil.style.maxHeight = menu_movil.scrollHeight + "px"; // animación desplegable
+function toggleMenu(){
+  if (menu_movil.style.maxHeight && menu_movil.style.maxHeight !== "0px") {
+    menu_movil.style.maxHeight = "0"; // colapsa suavemente
+    menu_movil.classList.add("opacity-0", "pointer-events-none");
+    lineas[0].classList.remove("rotate-45", "translate-y-2");
+    lineas[1].classList.remove("opacity-0");
+    lineas[2].classList.remove("-rotate-45", "-translate-y-2");
   } else {
-    menu_movil.style.maxHeight = "0px";
-    setTimeout(() => menu_movil.classList.add("hidden"), 500); // coincide con duration-500
+    menu_movil.style.maxHeight = menu_movil.scrollHeight + "px"; // expande suavemente
+    menu_movil.classList.remove("opacity-0", "pointer-events-none");
+    lineas[0].classList.add("rotate-45", "translate-y-2");
+    lineas[1].classList.add("opacity-0");
+    lineas[2].classList.add("-rotate-45", "-translate-y-2");
   }
+}
+
+
+btn__desplegar_menu.addEventListener("click", toggleMenu);
+
+
+enlacesMenu.forEach(enlace =>{
+  enlace.addEventListener("click", ()=>{
+    menu_movil.style.maxHeight = "0";
+    menu_movil.classList.add("opacity-0", "pointer-events-none");
+    lineas[0].classList.remove("rotate-45", "translate-y-2");
+    lineas[1].classList.remove("opacity-0");
+    lineas[2].classList.remove("-rotate-45", "-translate-y-2");
+  });
+
 });
-
-
 
 
