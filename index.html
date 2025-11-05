@@ -53,7 +53,7 @@
   <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden" style='font-family: "Work Sans", "Noto Sans", sans-serif;'>
     <div class="layout-container flex h-full grow flex-col">
       <div class="flex flex-1 justify-center px-4 py-5 sm:px-10 md:px-20 lg:px-40">
-        <div class="layout-content-container flex w-full max-w-[960px] flex-1 flex-col">
+        <div class="layout-content-container flex w-full max-w-[1080px] flex-1 flex-col">
           <header class="flex w-full items-center justify-between whitespace-nowrap border-b border-solid border-border-light dark:border-border-dark px-4 py-3 sm:px-10">
             <div class="flex items-center gap-4">
               <div class="size-6 text-primary">
@@ -63,13 +63,15 @@
               </div>
             <h2 class="text-lg font-bold leading-tight tracking-[-0.015em] text-text-light dark:text-text-dark">DISAVA</h2>
             </div>
-          <nav class="hidden items-center gap-9 md:flex">
-          <a class="text-sm font-medium leading-normal text-text-light dark:text-text-dark hover:text-primary" href="#">Productos</a>
-          <a class="text-sm font-medium leading-normal text-text-light dark:text-text-dark hover:text-primary" href="#">Nosotros</a>
-          <a class="text-sm font-medium leading-normal text-text-light dark:text-text-dark hover:text-primary" href="#">Contacto</a>
+          <nav id="menu_movil" class="hidden flex flex-col gap-2 bg-background-light dark:bg-background-dark p-4 absolute top-20 left-0 w-full md:hidden rounded-b-lg shadow-lg overflow-hidden max-h-0 transition-all duration-500">
+          <a class="text-text-light dark:text-text-dark hover:text-primary text-sm font-medium py-2 border-b border-border-light dark:border-border-dark" href="#">Productos</a>
+          <a class="text-text-light dark:text-text-dark hover:text-primary text-sm font-medium py-2 border-b border-border-light dark:border-border-dark" href="#">Nosotros</a>
+          <a class="text-text-light dark:text-text-dark hover:text-primary text-sm font-medium py-2" href="#">Contacto</a>
           </nav>
-          <button class="md:hidden">
-          <span class="material-symbols-outlined text-text-light dark:text-text-dark">menu</span>
+          <button id="btn_desplegar_menu" class="md:hidden relative w-8 h-8 flex flex-col justify-between items-center">
+          <span class="block w-8 h-0.5 bg-text-light dark:bg-text-dark transition-all duration-300 origin-center"></span>
+          <span class="block w-8 h-0.5 bg-text-light dark:bg-text-dark transition-all duration-300 origin-center"></span>
+          <span class="block w-8 h-0.5 bg-text-light dark:bg-text-dark transition-all duration-300 origin-center"></span>
           </button>
           </header>
           <main class="w-full flex-1">
@@ -79,7 +81,7 @@
           <h1 class="text-4xl font-black leading-tight tracking-[-0.033em] text-white @[480px]:text-5xl">
                                                 Distribuciones Avendaño Valverde (DISAVA)
                                               </h1>
-          <h2 class="text-base font-normal leading-normal text-text-secondary-dark @[480px]:text-lg">
+          <h2 class="text-base font-normal leading-normal text-white/80 @[480px]:text-lg">
                                                 Precisión y Seguridad para su Negocio
                                               </h2>
           </div>
