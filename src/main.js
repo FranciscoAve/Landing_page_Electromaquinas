@@ -1,6 +1,4 @@
 import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
 import { saveContact } from './js/firebase';
 
 const footerHtml = `
@@ -150,4 +148,6 @@ const enableContactForm = ()=>{
 
 (() => {
   enableContactForm();
+  console.log("Firebase Project ID:", import.meta.env.VITE_FIREBASE_PROJECT_ID);
+
 })  ();

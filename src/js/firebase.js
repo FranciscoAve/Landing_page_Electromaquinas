@@ -18,6 +18,7 @@ const database = getDatabase(app);
 
 const saveContact = async (fullName, mail, message) => {
   try{
+    
     const contactRef = ref(database, "contacts");
     const newContactRef = push(contactRef);
     await set(newContactRef, {
