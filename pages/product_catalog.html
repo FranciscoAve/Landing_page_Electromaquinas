@@ -76,17 +76,48 @@
     <!-- Product Card 1 -->
     <div class="group flex flex-col bg-white/5 dark:bg-[#1F2937] rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20 border border-white/10 dark:border-gray-700/50">
     <div class="relative w-full aspect-video">
-    <img alt="Balanzas digitales de precisión sobre un mostrador limpio" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3zQFv4oLUrQwaxqwkDKTF38pCSkeAJYTA5_LH652TJc29zQY2RReUGQAkp3Ul_CPtkdVrwlbB4tG4kRCZbe28jHa91uoRzJyuTbnJKHtjut22S9BClC5q3nVupkzOlwM_CnH-vSr9SnDwRBzg2srriDJp4iVtPo4oWcd_eTgbR_pCDTNtxx-L4NB7kbG7QtBqZQrxwbH0TBvypX48YyMZbsXY7Laq6FqHRNgtLK_DL6B05Z__74OpclqIGw78prsQ8SZJNarrI6VZ"/>
+        <img alt="Balanzas digitales de precisión sobre un mostrador limpio" 
+            class="w-full h-full object-cover" 
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3zQFv4oLUrQwaxqwkDKTF38pCSkeAJYTA5_LH652TJc29zQY2RReUGQAkp3Ul_CPtkdVrwlbB4tG4kRCZbe28jHa91uoRzJyuTbnJKHtjut22S9BClC5q3nVupkzOlwM_CnH-vSr9SnDwRBzg2srriDJp4iVtPo4oWcd_eTgbR_pCDTNtxx-L4NB7kbG7QtBqZQrxwbH0TBvypX48YyMZbsXY7Laq6FqHRNgtLK_DL6B05Z__74OpclqIGw78prsQ8SZJNarrI6VZ"/>
     </div>
+
     <div class="p-6 flex-grow flex flex-col">
-    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Balanzas Digitales de Precisión</h3>
-    <div class="mt-auto">
-    <a class="inline-block w-full text-center py-3 px-6 bg-primary text-background-dark font-bold rounded-lg transition-transform duration-300 group-hover:scale-105" href="https://api.whatsapp.com/send?phone=TUNUMERO&amp;text=Hola%20DISAVA,%20estoy%20interesado%20en%20consultar%20el%20precio%20de%20las%20Balanzas%20Digitales%20de%20Precisión." target="_blank">
-                            Consultar Precio
-                            </a>
+        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">
+        Balanzas Digitales de Precisión
+        </h3>
+
+        <!-- Contenedor de reseñas -->
+        <div class="reviews space-y-3 mb-4 max-h-40 overflow-y-auto bg-white/10 dark:bg-gray-800/30 rounded-lg p-3 text-sm">
+        <p class="text-gray-400 italic text-center">No hay reseñas todavía.</p>
+        </div>
+
+        <!-- Formulario oculto -->
+        <form class="hidden flex-col gap-2 mt-2" id="reviewForm-1">
+        <input type="text" placeholder="Tu nombre" 
+                class="w-full rounded-md p-2 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white bg-transparent focus:ring-primary focus:border-primary" />
+        <textarea rows="3" placeholder="Escribe tu reseña..." 
+                class="w-full rounded-md p-2 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white bg-transparent focus:ring-primary focus:border-primary"></textarea>
+        <button type="submit"
+                class="py-1.5 px-3 bg-primary/80 hover:bg-primary text-background-dark text-xs font-semibold rounded-md transition-all duration-200 shadow-sm hover:shadow-md mb-4">
+            Enviar reseña
+        </button>
+        </form>
+
+        <div class="mt-auto flex flex-col sm:flex-row gap-2">
+            <a class="sm:flex-1 text-center py-2.5 px-4 bg-primary text-background-dark font-bold rounded-lg transition-transform duration-300 group-hover:scale-105 text-sm"
+                href="https://api.whatsapp.com/send?phone=TUNUMERO&text=Hola%20DISAVA,%20estoy%20interesado%20en%20consultar%20el%20precio%20de%20las%20Balanzas%20Digitales%20de%20Precisión."
+                target="_blank">
+                Consultar
+            </a>
+
+            <button id="anadirRes" class="sm:flex-1 py-2.5 px-4 bg-primary text-background-dark font-bold rounded-lg transition-transform duration-300 group-hover:scale-105 text-sm">
+                Añadir reseña
+            </button>
+        </div>
+
     </div>
     </div>
-    </div>
+
     <!-- Product Card 2 -->
     <div class="group flex flex-col bg-white/5 dark:bg-[#1F2937] rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20 border border-white/10 dark:border-gray-700/50">
     <div class="relative w-full aspect-video">
@@ -96,7 +127,7 @@
     <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Contadoras y Detectoras de Billetes</h3>
     <div class="mt-auto">
     <a class="inline-block w-full text-center py-3 px-6 bg-primary text-background-dark font-bold rounded-lg transition-transform duration-300 group-hover:scale-105" href="https://api.whatsapp.com/send?phone=TUNUMERO&amp;text=Hola%20DISAVA,%20estoy%20interesado%20en%20consultar%20el%20precio%20de%20las%20Contadoras%20y%20Detectoras%20de%20Billetes." target="_blank">
-                        Consultar Precio
+                        Ver más
                         </a>
     </div>
     </div>
@@ -110,7 +141,7 @@
     <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Cajas Registradoras</h3>
     <div class="mt-auto">
     <a class="inline-block w-full text-center py-3 px-6 bg-primary text-background-dark font-bold rounded-lg transition-transform duration-300 group-hover:scale-105" href="https://api.whatsapp.com/send?phone=TUNUMERO&amp;text=Hola%20DISAVA,%20estoy%20interesado%20en%20consultar%20el%20precio%20de%20las%20Cajas%20Registradoras." target="_blank">
-                        Consultar Precio
+                        Ver más
                         </a>
     </div>
     </div>

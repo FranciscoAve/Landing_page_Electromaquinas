@@ -147,6 +147,5 @@ const enableContactForm = ()=>{
 
 
 (() => {
-  console.log("Firebase Project ID:", import.meta.env.VITE_FIREBASE_PROJECT_ID);
   enableContactForm();
 })  ();

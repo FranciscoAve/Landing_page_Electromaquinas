@@ -78,3 +78,13 @@ btnToPrincipal.addEventListener("click", () => {
     window.open("/index.html","_self");
 });
 
+
+
+
+const btnAnadirRes = document.getElementById("anadirRes");
+
+btnAnadirRes.addEventListener("click", ()=>{
+    const form = document.getElementById("reviewForm-1");
+    form.classList.toggle("hidden");
+
+});
